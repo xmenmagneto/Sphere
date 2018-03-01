@@ -1,0 +1,62 @@
+.app{
+  width: 30%;
+  margin: 50px auto;
+  height: 100vh;
+  font-size: 16px;
+}
+.nav{
+  flex-basis: 20%;
+}
+
+
+
+.support {
+  height: 50vh;
+  margin-bottom: 0;
+  border-radius: 6px;
+}
+.messages{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.messages{
+  height: 88%;
+}
+
+.messages > ul {
+  flex: 1;
+  overflow-y: auto;
+}
+
+
+.active {
+  background-color: rgba(32, 101, 169, 0.15);
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px #cbcbcb;
+}
+
+.form-group{
+  margin-bottom: 0;
+}
+ul{
+  list-style-type:none;
+  padding: 0;
+}
+
+li{
+  padding: 0 4px 0 4px;
+}
+
+a{
+  cursor: pointer;
+}
+
+.delete {
+  color: crimson;
+  font-style: italic;
+}
+
+span { width:50%; display:inline-block; }
+span.align-right { text-align:right; }

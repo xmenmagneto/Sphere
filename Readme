@@ -1,0 +1,36 @@
+1.install Cassandra following the instructions in this page: https://www.datastax.com/2012/01/working-with-apache-cassandra-on-mac-os-x
+
+2.Initialize database
+	#create keyspace [sphere]
+	echo "CREATE KEYSPACE sphere WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 1};" | cqlsh
+
+	#Create table [messages] in Cassandra
+	echo "use sphere; drop table messages; create table messages (id UUID, message text, PRIMARY KEY(id));" | cqlsh
+
+3.open Sphere_Backend fold and run the main.go file
+	go run main.go
+
+4.Once the Server is started, it is connected to Cassandra Database, now let's open the front end page
+
+5.install node and npm
+	#intall homebrew first, open terminal and type:
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+	#intall npde.js and NPM, type in terminal the following command:
+	brew install node
+
+6.open Sphere_Web folder, type the following commands in terminal
+	# initialize
+	npm init
+
+	npm install -g webpack
+
+	npm start
+
+7.Now the app will start to work. Please feel free to contact me if you have any questions.
+I can be reached at anytime via my phone 818-306-8305 or via email: dengtingchang@gmail.com
+
+Thank you!
+
+
+
